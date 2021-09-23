@@ -6,6 +6,11 @@ Docker image for demonstrating newsched
 docker build -t newsched-demo ./
 ```
 
+## Running with CUDA support
+```
+docker run --network=host --gpus all -it --rm -v `pwd`:/workspace/code newsched-demo bash
+```
+
 ## Running an example OOT on the docker
 ```
 docker run -it newsched-demo
